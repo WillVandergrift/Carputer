@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarUI</RootNamespace>
+    <AssemblyName>CarUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Transitionals">
+      <HintPath>..\Libraries\Transitionals.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\AnimatedControl.cs" />
+    <Compile Include="Animation\Animator.cs" />
+    <Compile Include="Music\CarMediaElement.cs" />
+    <Compile Include="Music\MusicListItem.xaml.cs">
+      <DependentUpon>MusicListItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicQueue.cs" />
+    <Compile Include="StatusBar\StatusBar.xaml.cs">
+      <DependentUpon>StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\Clock.xaml.cs">
+      <DependentUpon>Clock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicGenre.xaml.cs">
+      <DependentUpon>MusicGenre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicGenreHome.xaml.cs">
+      <DependentUpon>MusicGenreHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicArtist.xaml.cs">
+      <DependentUpon>MusicArtist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicHome.xaml.cs">
+      <DependentUpon>MusicHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FileBrowser.xaml.cs">
+      <DependentUpon>FileBrowser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Power.xaml.cs">
+      <DependentUpon>Power.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoverArt.xaml.cs">
+      <DependentUpon>CoverArt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\MainToolbar.xaml.cs">
+      <DependentUpon>MainToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VolumeSlider.xaml.cs">
+      <DependentUpon>VolumeSlider.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Music\MusicListItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatusBar\StatusBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Toolbar\Clock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Music\MusicGenre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\MusicGenreHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\MusicArtist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\MusicHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FileBrowser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Power.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoverArt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar\MainToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VolumeSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cd-cover.png" />
+    <Resource Include="Images\shrink.png" />
+    <Resource Include="Images\volume-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarPC\CarPC.csproj">
+      <Project>{2aade21c-874c-4fe0-b663-e1e20d4fed8a}</Project>
+      <Name>CarPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarViewModel\CarViewModel.csproj">
+      <Project>{054c6ba5-bba2-4848-b2fb-3249a9a47a79}</Project>
+      <Name>CarViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\music-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\volume-mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\power-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shutdown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hibernate-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\restart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\album.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\artist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\album-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\genre-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\playlist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stations-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\country-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\christian-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pop-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\soundtrack-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pause-button.png" />
+    <Resource Include="Images\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back-button.png" />
+    <Resource Include="Images\fast-forward-button.png" />
+    <Resource Include="Images\forward-button.png" />
+    <Resource Include="Images\repeat-button.png" />
+    <Resource Include="Images\rewind-button.png" />
+    <Resource Include="Images\shuffle-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shuffle-on-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\repeat-on-button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

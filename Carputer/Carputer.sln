@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carputer", "Carputer\Carputer.csproj", "{B9D7A7DB-D6E4-4BA9-AC2E-6488B80E2A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPC", "CarPC\CarPC.csproj", "{2AADE21C-874C-4FE0-B663-E1E20D4FED8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarViewModel", "CarViewModel\CarViewModel.csproj", "{054C6BA5-BBA2-4848-B2FB-3249A9A47A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarUI", "CarUI\CarUI.csproj", "{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicManager", "MusicManager\MusicManager.csproj", "{341D5BF2-197C-4385-BBB3-08DE3E565F72}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9D7A7DB-D6E4-4BA9-AC2E-6488B80E2A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D7A7DB-D6E4-4BA9-AC2E-6488B80E2A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D7A7DB-D6E4-4BA9-AC2E-6488B80E2A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D7A7DB-D6E4-4BA9-AC2E-6488B80E2A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AADE21C-874C-4FE0-B663-E1E20D4FED8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AADE21C-874C-4FE0-B663-E1E20D4FED8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AADE21C-874C-4FE0-B663-E1E20D4FED8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AADE21C-874C-4FE0-B663-E1E20D4FED8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054C6BA5-BBA2-4848-B2FB-3249A9A47A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054C6BA5-BBA2-4848-B2FB-3249A9A47A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054C6BA5-BBA2-4848-B2FB-3249A9A47A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054C6BA5-BBA2-4848-B2FB-3249A9A47A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81E2082-57BD-4F92-8E72-951FB4E3A5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341D5BF2-197C-4385-BBB3-08DE3E565F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341D5BF2-197C-4385-BBB3-08DE3E565F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341D5BF2-197C-4385-BBB3-08DE3E565F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341D5BF2-197C-4385-BBB3-08DE3E565F72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

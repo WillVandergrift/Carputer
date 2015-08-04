@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CarPC">
+  <DataContextMoniker Name="/CarPCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a4567b25-8d5c-4bbc-baf6-03c68eb2310b" absoluteBounds="2, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CarPCDataContext/Album" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9079c301-7d48-48f4-9a40-553c7fc855d2" absoluteBounds="2.0149999999999997, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a0f8a6d-7865-4853-b76b-0894d88704d2" absoluteBounds="5.25, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CarPCDataContext/Artist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61261eae-f9db-4942-84c9-71dcf565d449" absoluteBounds="5.265, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 1.31814697265625); (4 : 1.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CarPCDataContext/Artist/Artist_Album" />
+      <nodes>
+        <classShapeMoniker Id="8a0f8a6d-7865-4853-b76b-0894d88704d2" />
+        <classShapeMoniker Id="a4567b25-8d5c-4bbc-baf6-03c68eb2310b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4c1e690d-5a4e-4eb1-96ee-2f1a8314762c" absoluteBounds="5.125, 2.875, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/CarPCDataContext/Song" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8184be8d-4bbb-424a-aae5-ea82f67c9b4e" absoluteBounds="5.14, 3.335, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 2.23484537760417); (5.15625 : 2.23484537760417); (5.15625 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CarPCDataContext/Album/Album_Song" />
+      <nodes>
+        <classShapeMoniker Id="a4567b25-8d5c-4bbc-baf6-03c68eb2310b" />
+        <classShapeMoniker Id="4c1e690d-5a4e-4eb1-96ee-2f1a8314762c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,13 @@
+﻿<Animation:AnimatedControl x:Class="CarUI.VolumeSlider"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Animation="clr-namespace:CarUI.Animation"
+             mc:Ignorable="d" 
+             d:DesignHeight="371" Width="104">
+    <Grid Background="#7F000000">
+        <Slider x:Name="sldVolume" Opacity="0.9" HorizontalAlignment="Center" Orientation="Vertical" Style="{DynamicResource CarSliderVolume}" MinWidth="30" SmallChange="1" LargeChange="10" Maximum="400" Margin="12,0,12,84" ValueChanged="sldVolume_ValueChanged"/>
+        <Image x:Name="btnMute" Source="pack://application:,,,/CarUI;component/Images/volume-mute.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="70" MouseUp="btnMute_MouseUp" Margin="5,0,0,10" />
+    </Grid>
+</Animation:AnimatedControl>
